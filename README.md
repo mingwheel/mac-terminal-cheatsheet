@@ -1,23 +1,25 @@
 # Terminal commands
-
+A beginner's cheat sheet to the OS X Terminal <br><br>
 [10 Essential Commands](#10-essential-commands) <br>
-### Commands
-#### Files
+
+#### Files  
 [File Operations](#file-operations) <br>
 [File Compressing & Archiving](#compressing-and-archiving) <br>
 [File Permissions](#file-permissions) <br>
+[File Searching](#file-searching) <br>
 
 
 #### System
 [Disk Space](#disk-space) <br>
 [Processes](#processes) <br>
 
-## **10 Essential Commands**
+
+## **10 Essential Commands** 
 | Command | Usage | Description         | Details |
 |---------|-------|---------------------|---------| 
 | **`cd`** | **`cd`** `[dir]` | change directory | 
 | **`cp`** | **`cp`** `[original_file] [copied_file]` | copy file(s) | **`cp -R`** `[path_to_source] [path_to_dest/]` - copy *directories* recursively <br> **`cp -v`** - cause cp to be verbose |
-| **`grep`** | **`grep`** `[pattern] [filename(s)]` | search for `pattern` across file(s) | **`grep -c`** - print *only* matching line count <br> **`grep -n`** - print matched line and line number
+| **`grep`** | **`grep`** `[pattern] [filename(s)]` | search for `pattern` across file(s) | **`grep -c`** - print *only* count of matching line <br> **`grep -n`** - print matched line and line number <br> **`grep -i`** - case insensitive <br> [more](#grep) |
 | **`less`** | **`less`** `[filename]` | display long text file one page at a time | *while in less* <br> `g` - go to 1st line <br>  `q` - quit less <br>  `return` - next line <br> `spacebar` - next page <br>`/word` - search *forward* for `word` <br> [more](#less) | 
 | **`ls`** | **`ls`** | list all files or directories <br> common usage: **`ls -rtl`**| **`ls -a`** - list all (incl. hidden files) <br> **`ls -h`** - list with human readable file size <br> **`ls -l`** - long list <br> **`ls -r`** - reverse order <br> **`ls -t`** - sort by time modified |
 | **`man`** | **`man`** `[command]` | access built-in documentation for `command` |
@@ -25,6 +27,8 @@
 | **`pwd`** | **`pwd`** | display current working directory 
 | **`rm`** | **`rm`** `[filename]` | remove a `file`, `set of files` or `folder full of files` | **`rm -f`** `[file]` - force removal without confirmation <br>**`rm -r`** `[dir]` - remove directory & contents |
 | **`top`** | **`top`** | show `top` (cpu%) running applications and processes |
+
+[↑ back](#terminal-commands)
 
 ## **File Operations**
 | Command | Usage | Description         | Details |
@@ -39,12 +43,15 @@
 | **`touch`** | **`touch`** `[filename]` | create file(s) | **`touch /path/file`** - create file in `/path`
 | **`vi`** | **`vi`** `[filename]` | open file in vi editor | [cheatsheet](http://michael.peopleofhonoronly.com/vim/) | 
 
+[↑ back](#terminal-commands)
 
 ## **Compressing and Archiving**
 | Command | Usage | Description         | Details |
 |---------|-------|---------------------|---------|
 | **`gzip`** | **`gzip`** `[-v] [filename(s)]` | compress file with *verbose* `.gz` output | **`gunzip`** `[filename]` - uncompress file |
 | **`tar`** | **`tar`** `[-c|t|x] [flags] [files_and_dir_to_archive]` | *tape archiver* <br> **`tar -c`** create archive <br> **`tar -t`** show contents <br> **`tar -x`** extract files and dirs <br> e.g. **`tar -czvf thesis.tgz "Masters Thesis"`**| `-f` to specify archive name <br> `-v` for verbose output <br> `-z` compress with gzip |
+
+[↑ back](#terminal-commands)
 
 ## **File Permissions**
 <pre><code><b>$ ls -l</b>
@@ -70,7 +77,14 @@ $ ls -l</b>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**`+x`** - Add 'executable' (`-` remove, `=` exact) <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**`filename`** - Also works with a `directory`
 
+<a name="grep"></a>
+[↑ back](#terminal-commands)
 
+## **File Searching**
+| Command | Usage | Description         | Details |
+|---------|-------|---------------------|---------|
+
+[↑ back](#terminal-commands)
 
 ## **Disk Space**
 | Command | Usage | Description         | Details |
@@ -79,9 +93,13 @@ $ ls -l</b>
 | **`df`** | **`df -H`** | calculate free disk space with human readable format | **`df -i`** - show available inodes |
 | **`grep`** | **`grep`** `[pattern] [filename(s)]` | search for `pattern` across file(s) | **`grep word *txt`** - search for `word` in all `.txt` files | 
 
+[↑ back](#terminal-commands)
+
 ## **Processes**
 
 | Command | Usage | Description         | Details |
 |---------|-------|---------------------|---------|
 | **`ps`**| **`ps -acx`** <br><br> **`ps -ax \| grep`** `[word]`| list all processes <br><br>list all processes containing `word`  | `PID` - process id number <br> `TTY` - terminal process runs in <br> `TIME` - duration process has been running for <br> `CMD` - specific command being run |
 | **`kill`** | **`kill`** `[PID]` | kill process `PID` | 
+
+[↑ back](#terminal-commands)
