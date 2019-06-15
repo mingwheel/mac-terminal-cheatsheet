@@ -17,8 +17,8 @@
 |---------|-------|---------------------|---------| 
 | **`cd`** | **`cd`** `[dir]` | change directory | 
 | **`cp`** | **`cp`** `[original_file] [copied_file]` | copy file(s) | **`cp -R`** `[path_to_source] [path_to_dest/]` - copy *directories* recursively <br> **`cp -v`** - cause cp to be verbose |
-| **`grep`** | **`grep`** `[pattern] [filename(s)]` | search for `pattern` across file(s) |
-| **`less`** | **`less`** `[filename]` | display long text file one page at a time | `g` - go to 1st line <br>  `q` - quit <br> `v` - start *vim* editor <br> `return` - next line <br> `spacebar` - next page <br>`/word` - search *forward* for `word` <br> [more](#less) | 
+| **`grep`** | **`grep`** `[pattern] [filename(s)]` | search for `pattern` across file(s) | **`grep -c`** - print *only* matching line count <br> **`grep -n`** - print matched line and line number
+| **`less`** | **`less`** `[filename]` | display long text file one page at a time | *while in less* <br> `g` - go to 1st line <br>  `q` - quit less <br>  `return` - next line <br> `spacebar` - next page <br>`/word` - search *forward* for `word` <br> [more](#less) | 
 | **`ls`** | **`ls`** | list all files or directories <br> common usage: **`ls -rtl`**| **`ls -a`** - list all (incl. hidden files) <br> **`ls -h`** - list with human readable file size <br> **`ls -l`** - long list <br> **`ls -r`** - reverse order <br> **`ls -t`** - sort by time modified |
 | **`man`** | **`man`** `[command]` | access built-in documentation for `command` |
 | **`mv`** | **`mv`** `[original_file] [new_file]` | move `original_file` to `new_file` | rename files / directories 
@@ -31,7 +31,7 @@
 |---------|-------|---------------------|---------|
 | **`cat`** | **`cat`** `[filename]` | print file contents onto screen | **`cat -n`** - add line numbers | 
 | **`cp`** | **`cp`** `[old] [new]` | copy file(s) | **`cp -i ...`** - interactive mode with option (e.g. overwrite existing file) <br> **`cp -R`** `[path_to_source] [path_to_dest/]` - copy *directories* recursively <br> **`cp -v`** - cause cp to be verbose |
-| **`less`** | **`less`** `[filename]` | display long text file one page at a time | <a name="less"></a>`g` - go to beginning of file <br> `G` - go to end of file <br> `return` - next line <br>  *`n`*`g` - go to *`n`* line <br> `q` - quit <br>   `spacebar` - next page <br> `b` - previous page <br>`/word` - search *forward* for `word` <br> `?word` - search *backward* for `word` <br> `v` - start *vi* editor <br> | 
+| **`less`** | **`less`** `[filename]` | display long text file one page at a time | <a name="less"></a> *while in less* <br> `g` - go to beginning of file <br> `G` - go to end of file <br> `return` - next line <br>  *`n`*`g` - go to *`n`* line <br> `q` - quit less <br>   `spacebar` - next page <br> `b` - previous page <br>`/word` - search *forward* for `word` <br> `?word` - search *backward* for `word` <br> `v` - start *vi* editor <br> | 
 | **`ln`** | **`ln`** `[source] [target]` | Hard link `target` to `source` file | **`ln -s`** - create symbolic link 
 | **`mkdir`** | **`mkdir`** `[dirname]` | create directory(s) | **`mkdir "dirname with spaces"`** - create dir with spaces in `dirname` <br> **`mkdir -p parent/child{01,02,03}`** - create dir `parent` with *subdir* `child01`, `child02`, `child03`
 | **`open`** | **`open`** `[filename]` | open file in default application | **`open -e file`** - opens `file` with *TextEdit* |
