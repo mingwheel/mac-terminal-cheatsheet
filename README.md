@@ -2,7 +2,7 @@
 
 [10 Essential Commands](#10-essential-commands) <br>
 #### Commands
-[File handling](#file-handling) <br>
+[File Operations](#file-operations) <br>
 [Processes](#processes) <br>
 
 #### Files
@@ -14,7 +14,7 @@
 |---------|-------|---------------------|---------| 
 | **`cd`** | **`cd`** `[dir]` | change directory | 
 | **`cp`** | **`cp`** `[original_file] [copied_file]` | copy file(s) | **`cp -R`** `[path_to_source] [path_to_dest/]` - copy *directories* recursively <br> **`cp -v`** - cause cp to be verbose |
-| **`grep`** | **`grep`** `[pattern] [filename(s)]` | search for `pattern` across `file(s)` |
+| **`grep`** | **`grep`** `[pattern] [filename(s)]` | search for `pattern` across file(s) |
 | **`less`** | **`less`** `[filename]` | display long text file one page at a time | `g` - go to 1st line <br>  `q` - quit <br> `v` - start *vim* editor <br> `return` - next line <br> `spacebar` - next page <br>`/word` - search *forward* for `word` <br> [more](#less) | 
 | **`ls`** | **`ls`** | list all files or directories <br> common usage: **`ls -rtl`**| **`ls -a`** - list all (incl. hidden files) <br> **`ls -h`** - list with human readable file size <br> **`ls -l`** - long list <br> **`ls -r`** - reverse order <br> **`ls -t`** - sort by time modified |
 | **`man`** | **`man`** `[command]` | access built-in documentation for `command` |
@@ -23,17 +23,22 @@
 | **`rm`** | **`rm`** `[filename]` | remove a `file`, `set of files` or `folder full of files` | **`rm -f`** `[file]` - force removal without confirmation <br>**`rm -r`** `[dir]` - remove directory & contents |
 | **`top`** | **`top`** | show `top` (cpu%) running applications and processes |
 
-## **File Handling**
+## **File Operations**
 | Command | Usage | Description         | Details |
 |---------|-------|---------------------|---------|
 | **`cat`** | **`cat`** `[filename]` | print file contents onto screen | **`cat -n`** - add line numbers | 
-| **`less`** | **`less`** `[filename]` | display long text file one page at a time | <a name="less"></a>`g` - go to beginning of file <br> `G` - go to end of file <br> `return` - next line <br>  *`n`*`g` - go to *`n`* line <br> `q` - quit <br>   `spacebar` - next page <br> `b` - previous page <br>`/word` - search *forward* for `word` <br> `?word` - search *backward* for `word` <br> `v` - start *vim* editor <br> | 
+| **`less`** | **`less`** `[filename]` | display long text file one page at a time | <a name="less"></a>`g` - go to beginning of file <br> `G` - go to end of file <br> `return` - next line <br>  *`n`*`g` - go to *`n`* line <br> `q` - quit <br>   `spacebar` - next page <br> `b` - previous page <br>`/word` - search *forward* for `word` <br> `?word` - search *backward* for `word` <br> `v` - start *vi* editor <br> | 
+| **`open`** | **`open`** `[filename]` | open file in default application | **`open -e file`** - opens `file` with *TextEdit* |
+| **`vi`** | **`vi`** `[filename]` | open file in vi editor | [cheatsheet](http://michael.peopleofhonoronly.com/vim/)
+| 
+
+
 ## **Processes**
 
 | Command | Usage | Description         | Details |
 |---------|-------|---------------------|---------|
 | **`ps`**| **`ps -acx`** <br><br> **`ps -ax \| grep`** `[word]`| list all processes <br><br>list all processes containing `word`  | `PID` - process id number <br> `TTY` - terminal process runs in <br> `TIME` - duration process has been running for <br> `CMD` - specific command being run |
-| **`kill`** | **`kill`** `[PID]` | kill process `PID` |
+| **`kill`** | **`kill`** `[PID]` | kill process `PID` | 
 
 
 ## **File Permissions**
@@ -64,4 +69,4 @@ $ ls -l</b>
 |---------|-------|---------------------|---------|
 | **`du`** | **`du`** `[file]` <br> **`du`** `[dir]` | calculate size of `file` / files in `directory` <br> common usage: **`du -sh /Applications/*.app`** | **`du -s`** - total for dir |
 | **`df`** | **`df -H`** | calculate free disk space with human readable format | **`df -i`** - show available inodes |
-|
+| **`grep`** | **`grep`** `[pattern] [filename(s)]` | search for `pattern` across file(s) | **`grep word *txt`** - search for `word` in all `.txt` files
