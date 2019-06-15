@@ -26,8 +26,8 @@
 ## **File Handling**
 | Command | Usage | Description         | Details |
 |---------|-------|---------------------|---------|
-| **`cat`** | **`cat`** `[filename]` | print file contents onto screen | **`cat -n`** - add line numbers |
-| <a name="less"></a>**`less`** | **`less`** `[filename]` | display long text file one page at a time | `g` - go to beginning of file <br> `G` - go to end of file <br> `return` - next line <br>  *`n`*`g` - go to *`n`* line <br> `q` - quit <br>   `spacebar` - next page <br> `b` - previous page <br>`/word` - search *forward* for `word` <br> `?word` - search *backward* for `word` <br> `v` - start *vim* editor <br> | 
+| **`cat`** | **`cat`** `[filename]` | print file contents onto screen | **`cat -n`** - add line numbers | <a name="less"></a>
+| **`less`** | **`less`** `[filename]` | display long text file one page at a time | `g` - go to beginning of file <br> `G` - go to end of file <br> `return` - next line <br>  *`n`*`g` - go to *`n`* line <br> `q` - quit <br>   `spacebar` - next page <br> `b` - previous page <br>`/word` - search *forward* for `word` <br> `?word` - search *backward* for `word` <br> `v` - start *vim* editor <br> | 
 ## **Processes**
 
 | Command | Usage | Description         | Details |
