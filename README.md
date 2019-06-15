@@ -12,16 +12,16 @@
 ## **10 Essential Commands**
 | Command | Usage | Description         | Details |
 |---------|-------|---------------------|---------| 
-| **`cd`** | **`cd`** `[dir]` | change directory | 
-| **`cp`** | **`cp`** `[original_file] [copied_file]` | copy file(s) | `cp -R [path_to_source] [path_to_dest/]` - copy directories recursively <br> `cp -v` - cause cp to be verbose |
+| **`cd`** | **`cd`**`[dir]` | change directory | 
+| **`cp`** | **`cp`** `[original_file] [copied_file]` | copy file(s) | **`cp -R`** `[path_to_source] [path_to_dest/]` - copy directories recursively <br> **`cp -v`** - cause cp to be verbose |
 | **`grep`** | **`grep`** `[pattern] [filename(s)]` | search for `pattern` across `file(s)` |
-| **`less`** | **`less`** `[filename]` | display long text file one page at a time | `spacebar` - next page <br> `q` - quit |
-| **`ls`** | **`ls`** | list all files or directories <br> common usage: `ls -rtl`| `ls -a` - list all (incl. hidden files) <br> `ls -h` - list with human readable file size <br> `ls -l` - long list <br> `ls -r` - reverse order <br> `ls -t` - sort by time modified |
+| **`less`** | **`less`** `[filename]` | display long text file one page at a time | `<spacebar>` - next page <br> `<q>` - quit |
+| **`ls`** | **`ls`** | list all files or directories <br> common usage: **`ls -rtl`**| **`ls -a`** - list all (incl. hidden files) <br> **`ls -h`** - list with human readable file size <br> **`ls -l`** - long list <br> **`ls -r`** - reverse order <br> **`ls -t`** - sort by time modified |
 | **`man`** | **`man`** `[command]` | access built-in documentation for `command` |
 | **`mv`** | **`mv`** `[original_file]` `[new_file]` | move `original_file` to `new_file` | rename files / directories 
 | **`pwd`** | **`pwd`** | display current working directory 
-| **`rm`** | **`rm`** `[filename]` | remove a `file`, `set of files` or `folder full of files` | `rm -f [file]` - force removal without confirmation <br>`rm -r [dir]` - remove directory & contents |
-| **`top`** | `top` | show `top` (cpu%) running applications and processes |
+| **`rm`** | **`rm`** `[filename]` | remove a `file`, `set of files` or `folder full of files` | **`rm -f`** `[file]` - force removal without confirmation <br>**`rm -r`** `[dir]` - remove directory & contents |
+| **`top`** | **`top`** | show `top` (cpu%) running applications and processes |
 
 
 ## **Processes**
@@ -48,6 +48,6 @@ drwxr-x---  9  user  user  238  Jun 15  18:49  Documents
 ## **Disk Space**
 | Command | Usage | Description         | Details |
 |---------|-------|---------------------|---------|
-| **`du`** | **`du`** `[file]` <br> **`du`** `[dir]` | calculate size of `file` / files in `directory` <br> common usage: `du -sh /Applications/*.app` | `du -s` - total for dir |
-| **`df`** | **`df -h`** | calculate free disk space with human readable format | |
+| **`du`** | **`du`** `[file]` <br> **`du`** `[dir]` | calculate size of `file` / files in `directory` <br> common usage: **`du -sh /Applications/*.app`** | **`du -s`** - total for dir |
+| **`df`** | **`df -H`** | calculate free disk space with human readable format | **`df -i`** - show available inodes |
 |
