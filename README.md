@@ -2,7 +2,7 @@
 
 [10 Essential Commands](#10-essential-commands) <br>
 #### Commands
-[File handling]() <br>
+[File handling](#file-handling) <br>
 [Processes](#processes) <br>
 
 #### Files
@@ -13,9 +13,9 @@
 | Command | Usage | Description         | Details |
 |---------|-------|---------------------|---------| 
 | **`cd`** | **`cd`** `[dir]` | change directory | 
-| **`cp`** | **`cp`** `[original_file] [copied_file]` | copy file(s) | **`cp -R`** `[path_to_source] [path_to_dest/]` - copy directories recursively <br> **`cp -v`** - cause cp to be verbose |
+| **`cp`** | **`cp`** `[original_file] [copied_file]` | copy file(s) | **`cp -R`** `[path_to_source] [path_to_dest/]` - copy *directories* recursively <br> **`cp -v`** - cause cp to be verbose |
 | **`grep`** | **`grep`** `[pattern] [filename(s)]` | search for `pattern` across `file(s)` |
-| **`less`** | **`less`** `[filename]` | display long text file one page at a time | `g` - go to 1st line <br> `spacebar` - next page <br> `q` - quit <br> `/[searchterm]` - matches `searchterm` in file|
+| **`less`** | **`less`** `[filename]` | display long text file one page at a time | `g` - go to 1st line <br>  `q` - quit <br> `v` - start *vim* editor <br> `return` - next line <br> `spacebar` - next page <br>`/word` - search *forward* for `word` [more](#file-handling) | 
 | **`ls`** | **`ls`** | list all files or directories <br> common usage: **`ls -rtl`**| **`ls -a`** - list all (incl. hidden files) <br> **`ls -h`** - list with human readable file size <br> **`ls -l`** - long list <br> **`ls -r`** - reverse order <br> **`ls -t`** - sort by time modified |
 | **`man`** | **`man`** `[command]` | access built-in documentation for `command` |
 | **`mv`** | **`mv`** `[original_file]` `[new_file]` | move `original_file` to `new_file` | rename files / directories 
@@ -27,8 +27,7 @@
 | Command | Usage | Description         | Details |
 |---------|-------|---------------------|---------|
 | **`cat`** | **`cat`** `[filename]` | print file contents onto screen | **`cat -n`** - add line numbers |
-| **`less`** | **`less`** `[filename]` | display long text file one page at a time | `g` - go to 1st line <br> `spacebar` - next page <br> `q` - quit |
-
+| **`less`** | **`less`** `[filename]` | display long text file one page at a time | `g` - go to beginning of file <br> `G` - go to end of file <br> `return` - next line <br>  *`n`*`g` - go to *`n`* line <br> `q` - quit <br> `v` - start *vim* editor <br>  `spacebar` - next page <br> `b` - previous page <br>`/word` - search *forward* for `word` <br> `?word` - search *backward* for `word` <br> | 
 ## **Processes**
 
 | Command | Usage | Description         | Details |
