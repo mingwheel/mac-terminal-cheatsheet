@@ -19,7 +19,7 @@
 
 | Command | Usage | Description         | Details |
 |---------|-------|---------------------|---------|
-| **`ps`**| **`ps -acx`** <br><br> **`ps -ax | grep`** `[word]`| list all processes <br><br>list all processes containing `word`  | `PID` - process id number <br> `TTY` - terminal process runs in <br> `TIME` - duration process has been running for <br> `CMD` - specific command being run |
+| **`ps`**| **`ps -acx`** <br><br> **`ps -ax \| grep`** `[word]`| list all processes <br><br>list all processes containing `word`  | `PID` - process id number <br> `TTY` - terminal process runs in <br> `TIME` - duration process has been running for <br> `CMD` - specific command being run |
 | **`kill`** | **`kill`** `[PID]` | kill process `PID` |
 
 ---
