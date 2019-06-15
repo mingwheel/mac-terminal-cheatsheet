@@ -12,7 +12,7 @@
 ## **10 Essential Commands**
 | Command | Usage | Description         | Details |
 |---------|-------|---------------------|---------| 
-| **`cd`** | **`cd`**`[dir]` | change directory | 
+| **`cd`** | **`cd`** `[dir]` | change directory | 
 | **`cp`** | **`cp`** `[original_file] [copied_file]` | copy file(s) | **`cp -R`** `[path_to_source] [path_to_dest/]` - copy directories recursively <br> **`cp -v`** - cause cp to be verbose |
 | **`grep`** | **`grep`** `[pattern] [filename(s)]` | search for `pattern` across `file(s)` |
 | **`less`** | **`less`** `[filename]` | display long text file one page at a time | `<spacebar>` - next page <br> `<q>` - quit |
@@ -34,15 +34,21 @@
 
 ## **File Permissions**
 <pre><code><b>$ ls -l</b>
-drwxr-x---  9  user  user  238  Jun 15  18:49  Documents
+drwxr-x---  9  user  user  238 Jun 15 18:49 Documents
 ...
 </code></pre>
-**`d` | `rwx` | `r-x` | `---`**
+> **`d` | `rwx` | `r-x` | `---`**
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**`d`** - **File Type** (`d` = directory) <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**`rwx`** - **Owner's file permission** (`r` = readable, `w` = writable, `x` = executable)<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**`r-x`** - **Group file permission** <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**`---`** - **Other file permission**
+<pre><code>-r--r-----  1  root  wheel  2299 Jun 15 20:33 filename
+<b>$ chmod <i>a+x filename</i>
+$ ls</b>
+-r-x--x--x  1  root  wheel  2299 June 15 20:33 filename
+</code></pre>
+> **`chmod` | `a` | `+x` | `filename`**
 
 
 ## **Disk Space**
