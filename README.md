@@ -17,9 +17,9 @@
 ---
 ## **Processes**
 
-| Command | Usage | Description         | Details |****
+| Command | Usage | Description         | Details |
 |---------|-------|---------------------|---------|
-| **`ps`**| **`ps -acx`**<br><br> **`ps -ax | grep`** `[word]`| list all processes <br><br>list all processes containing `word`  | `PID` - process id number <br> `TTY` - terminal process runs in <br> `TIME` - duration process has been running for <br> `CMD` - specific command being run |
+| **`ps`**| **`ps -acx`** <br><br> **`ps -ax | grep`** `[word]`| list all processes <br><br>list all processes containing `word`  | `PID` - process id number <br> `TTY` - terminal process runs in <br> `TIME` - duration process has been running for <br> `CMD` - specific command being run |
 | **`kill`** | **`kill`** `[PID]` | kill process `PID` |
 
 ---
@@ -29,7 +29,7 @@
 drwxr-x---  9  user  user  238  Jun 15  18:49  Documents
 ...
 </code></pre>
-> **`d` | `rwx` | `r-x` | `---`**
+**`d` | `rwx` | `r-x` | `---`**
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**`d`** - File Type ("d" = directory) <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**`rwx`** - Owner's file permission <br>
