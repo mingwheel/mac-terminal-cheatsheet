@@ -4,7 +4,9 @@
 ### Commands
 #### Files
 [File Operations](#file-operations) <br>
+[File Compressing & Archiving](#compressing-and-archiving) <br>
 [File Permissions](#file-permissions) <br>
+
 
 #### System
 [Disk Space](#disk-space) <br>
@@ -36,7 +38,13 @@
 | **`rm`** | **`rm`** `[filename]` | remove a `file`, `set of files` or `folder full of files` | **`rm ch*`** - removes *all* files with prefix `ch` <br> **`rm -f`** `[file]` - force removal without confirmation <br>**`rm -r`** `[dir]` - remove directory & contents |
 | **`touch`** | **`touch`** `[filename]` | create file(s) | **`touch /path/file`** - create file in `/path`
 | **`vi`** | **`vi`** `[filename]` | open file in vi editor | [cheatsheet](http://michael.peopleofhonoronly.com/vim/) | 
-| 
+
+
+## **Compressing and Archiving**
+| Command | Usage | Description         | Details |
+|---------|-------|---------------------|---------|
+| **`gzip`** | **`gzip`** `[-v] [filename(s)]` | compress file with *verbose* `.gz` output | **`gunzip`** `[filename]` - uncompress file |
+| **`tar`** | **`tar`** `[-c|t|x] [flags] [files_and_dir_to_archive]` | *tape archiver* <br> **`tar -c`** create archive <br> **`tar -t`** show contents <br> **`tar -x`** extract files and dirs <br> e.g. **`tar -czvf thesis.tgz "Masters Thesis"`**| `-f` to specify archive name <br> `-v` for verbose output <br> `-z` compress with gzip |
 
 ## **File Permissions**
 <pre><code><b>$ ls -l</b>
@@ -61,6 +69,9 @@ $ ls -l</b>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**`a`** - All categories (`u` = user, `g` = group, `o` = other) <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**`+x`** - Add 'executable' (`-` remove, `=` exact) <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**`filename`** - Also works with a `directory`
+
+
+
 ## **Disk Space**
 | Command | Usage | Description         | Details |
 |---------|-------|---------------------|---------|
