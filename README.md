@@ -17,9 +17,9 @@ A beginner's cheat sheet to the OS X Terminal <br><br>
 ## **10 Essential Commands** 
 | Command | Usage | Description         | Details |
 |---------|-------|---------------------|---------| 
-| **`cd`** | **`cd`** `[dir]` | change directory | 
+| **`cd`** | **`cd`** `[dir]` | change directory | **`cd`** - home dir <br> **`cd \`** - root dir <br> **`cd ..`** - one level up |
 | **`cp`** | **`cp`** `[original_file] [copied_file]` | copy file(s) | **`cp -R`** `[path_to_source] [path_to_dest/]` - copy *directories* recursively <br> **`cp -v`** - cause cp to be verbose |
-| **`grep`** | **`grep`** `[pattern] [filename(s)]` | search for `pattern` across file(s) | **`grep -c`** - print *only* count of matching line <br> **`grep -n`** - print matched line and line number <br> **`grep -i`** - case insensitive <br> [more](#grep) |
+| **`grep`** | **`grep`** `[pattern] [filename(s)]` | search for `pattern` across file(s) | **`grep -c`** - print *only* count of matching line <br> **`grep -i`** - case insensitive <br> **`grep -n`** - print matched line and line number <br>  [more](#grep) |
 | **`less`** | **`less`** `[filename]` | display long text file one page at a time | *while in less* <br> `g` - go to 1st line <br>  `q` - quit less <br>  `return` - next line <br> `spacebar` - next page <br>`/word` - search *forward* for `word` <br> [more](#less) | 
 | **`ls`** | **`ls`** | list all files or directories <br> common usage: **`ls -rtl`**| **`ls -a`** - list all (incl. hidden files) <br> **`ls -h`** - list with human readable file size <br> **`ls -l`** - long list <br> **`ls -r`** - reverse order <br> **`ls -t`** - sort by time modified |
 | **`man`** | **`man`** `[command]` | access built-in documentation for `command` |
@@ -77,12 +77,12 @@ $ ls -l</b>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**`+x`** - Add 'executable' (`-` remove, `=` exact) <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**`filename`** - Also works with a `directory`
 
-<a name="grep"></a>
 [↑ back](#terminal-commands)
 
 ## **File Searching**
 | Command | Usage | Description         | Details |
 |---------|-------|---------------------|---------|
+| **`grep`** | **`grep`** `[pattern] [filename(s)]` | search for `pattern`* across file(s) <br> `pattern` can be a `RegEx` <br><br> *examples* <br> **`grep word *txt`** - match `word` in all `.txt` files <br> **`grep [[:digit:]]{3}A file`** - match *exactly 3 digits followed by 'A'* in file  | <a name="grep"></a>**`grep -c`** - print *only* count of matching line <br> **`grep -i`** - case insensitive <br> **`grep -l`** - print *only* matched filename(s) <br> **`grep -n`** - print matched line and line number <br>  **`grep -v`** - print *only* lines that *don't* match `pattern` <br> **`grep -A`** *`n`* - show *`n`* lines *after* matching line <br> **`grep -B`** *`n`* - show *`n`* lines *before* matching line <br> **`grep -C`** *`n`* - show *`n`* lines *before and after* matching line <br> **`grep --color=always`** - highlights `pattern` in matched lines | 
 
 [↑ back](#terminal-commands)
 
@@ -91,7 +91,7 @@ $ ls -l</b>
 |---------|-------|---------------------|---------|
 | **`du`** | **`du`** `[file]` <br> **`du`** `[dir]` | calculate size of `file` / files in `directory` <br> common usage: **`du -sh /Applications/*.app`** | **`du -s`** - total for dir |
 | **`df`** | **`df -H`** | calculate free disk space with human readable format | **`df -i`** - show available inodes |
-| **`grep`** | **`grep`** `[pattern] [filename(s)]` | search for `pattern` across file(s) | **`grep word *txt`** - search for `word` in all `.txt` files | 
+
 
 [↑ back](#terminal-commands)
 
