@@ -120,4 +120,6 @@ $ ls -l</b>
 | **`ps`**| **`ps -acx`** <br><br> **`ps -ax \| grep`** `[word]`| list all processes <br><br>list all processes containing `word`  | `PID` - process id number <br> `TTY` - terminal name <br> `TIME` - CPU time the process has been used <br> `CMD` - name of process |
 | **`kill`** | **`kill`** `[PID]` | kill process `PID` | 
 | **`top`** | **`top`** | display and update info about processes | **`top -o cpu`** - sort by *CPU usage* instead of `PID` |
+
+
 [↑ back](#terminal-commands)
