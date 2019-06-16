@@ -7,6 +7,7 @@ Cheatsheet with *basic* commands for the OS X Terminal <br><br>
 [File Compressing & Archiving](#compressing-and-archiving) <br>
 [File Permissions](#file-permissions) <br>
 [File Searching](#file-searching) <br>
+[Metadata](#Metadata)<br>
 
 
 #### System
@@ -15,6 +16,7 @@ Cheatsheet with *basic* commands for the OS X Terminal <br><br>
 
 
 ## **10 Essential Commands** 
+
 | Command | Usage | Description         | Details |
 |---------|-------|---------------------|---------| 
 | **`cd`** | **`cd`** `[dir]` | change directory | **`cd`** - home dir <br> **`cd \`** - root dir <br> **`cd ..`** - one level up |
@@ -31,6 +33,7 @@ Cheatsheet with *basic* commands for the OS X Terminal <br><br>
 [↑ back](#terminal-commands)
 
 ## **File Operations**
+
 | Command | Usage | Description         | Details |
 |---------|-------|---------------------|---------|
 | **`cat`** | **`cat`** `[filename]` | print file contents onto screen | **`cat -n`** - add line numbers | 
@@ -46,6 +49,7 @@ Cheatsheet with *basic* commands for the OS X Terminal <br><br>
 [↑ back](#terminal-commands)
 
 ## **Compressing and Archiving**
+
 | Command | Usage | Description         | Details |
 |---------|-------|---------------------|---------|
 | **`gzip`** | **`gzip`** `[-v] [filename(s)]` | compress file with *verbose* `.gz` output | **`gunzip`** `[filename]` - uncompress file |
@@ -54,6 +58,7 @@ Cheatsheet with *basic* commands for the OS X Terminal <br><br>
 [↑ back](#terminal-commands)
 
 ## **File Permissions**
+
 <pre><code><b>$ ls -l</b>
 drwxr-x---  9  user  user  238 Jun 15 18:49 Documents
 </code></pre>
@@ -80,6 +85,7 @@ $ ls -l</b>
 [↑ back](#terminal-commands)
 
 ## **File Searching**
+
 | Command | Usage | Description         | Details |
 |---------|-------|---------------------|---------|
 | **`grep`** | **`grep`** `[pattern] [filename(s)]` | search for `pattern`* across file(s) <br> `pattern` can be a `RegEx` <br><br> *example:* <br> **`grep word *txt`** - match `word` in all `.txt` files <br> **`grep [[:digit:]]{3}A file`** - match *exactly 3 digits followed by 'A'* in file  | <a name="grep"></a>**`grep -c`** - print *only* count of matching line <br> **`grep -i`** - case insensitive <br> **`grep -l`** - print *only* matched filename(s) <br> **`grep -n`** - print matched line and line number <br>  **`grep -v`** - print *only* lines that *don't* match `pattern` <br> **`grep -A`** *`n`* - show *`n`* lines *after* matching line <br> **`grep -B`** *`n`* - show *`n`* lines *before* matching line <br> **`grep -C`** *`n`* - show *`n`* lines *before and after* matching line <br> **`grep --color=always`** - highlights `pattern` in matched lines | 
@@ -87,7 +93,18 @@ $ ls -l</b>
  
 [↑ back](#terminal-commands)
 
+## **Metadata**
+
+| Command | Usage | Description         | Details |
+|---------|-------|---------------------|---------|
+| **`mdls`** | **`mdls`** `[filename]` | list spotlight metadata |
+| **`mdfind`** | **`mdfind`** `[query]` | find files matching `query` <br><br> *example:* <br> **`mdfind -onlyin ~/Music "kMDItemMusicalGenre == 'Metal'"`** - find all Metal songs in collection | `-onlyin` - constrain search to specific subdir <br> `-count` - output *number* of matches |
+
+
+[↑ back](#terminal-commands)
+
 ## **Disk Space**
+
 | Command | Usage | Description         | Details |
 |---------|-------|---------------------|---------|
 | **`du`** | **`du`** `[file]` <br> **`du`** `[dir]` | calculate size of file(s) in dir <br> common usage: **`du -sh /Applications/*.app`** | **`du -s`** - total for dir |
@@ -96,7 +113,8 @@ $ ls -l</b>
 
 [↑ back](#terminal-commands)
 
-## **Processes**
+
+## **Processes & History**
 
 | Command | Usage | Description         | Details |
 |---------|-------|---------------------|---------|
