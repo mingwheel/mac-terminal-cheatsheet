@@ -29,7 +29,7 @@ Cheatsheet with *basic* commands for the OS X Terminal <br><br>
 | **`rm`** | **`rm`** `[filename]` | remove a `file`, `set of files` or `folder full of files` | **`rm -f`** `[file]` - force removal without confirmation <br>**`rm -r`** `[dir]` - remove directory & contents |
 | **`top`** | **`top`** | display and update info about processes | **`top -o cpu`** - sort by *CPU usage* instead of `PID`
 
-[↑ back](#terminal-commands)
+<div style="text-align: right;"><a href="#terminal-commands">↑ back</a></div>
 
 ## **File Operations**
 
@@ -45,7 +45,7 @@ Cheatsheet with *basic* commands for the OS X Terminal <br><br>
 | **`touch`** | **`touch`** `[filename]` | create file(s) | **`touch /path/file`** - create file in `/path`
 | **`vi`** | **`vi`** `[filename]` | open file in vi editor | [cheatsheet](http://michael.peopleofhonoronly.com/vim/) | 
 
-[↑ back](#terminal-commands)
+<div style="text-align: right;"><a href="#terminal-commands">↑ back</a></div>
 
 ## **Compressing and Archiving**
 
@@ -54,7 +54,7 @@ Cheatsheet with *basic* commands for the OS X Terminal <br><br>
 | **`gzip`** | **`gzip`** `[-v] [filename(s)]` | compress file with *verbose* `.gz` output | **`gunzip`** `[filename]` - uncompress file |
 | **`tar`** | **`tar`** `[-c|t|x] [flags] [files_and_dir_to_archive]` | *tape archiver* <br> **`tar -c`** create archive <br> **`tar -t`** show contents <br> **`tar -x`** extract files and dirs <br> e.g. **`tar -czvf thesis.tgz "Masters Thesis"`**| `-f` to specify archive name <br> `-v` for verbose output <br> `-z` compress with gzip |
 
-[↑ back](#terminal-commands)
+<div style="text-align: right;"><a href="#terminal-commands">↑ back</a></div>
 
 ## **File Permissions**
 
@@ -81,7 +81,7 @@ $ ls -l</b>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**`+x`** - Add 'executable' (`-` remove, `=` exact) <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**`filename`** - Also works with a `directory`
 
-[↑ back](#terminal-commands)
+<div style="text-align: right;"><a href="#terminal-commands">↑ back</a></div>
 
 ## **File Searching**
 
@@ -90,7 +90,7 @@ $ ls -l</b>
 | **`grep`** | **`grep`** `[pattern] [filename(s)]` | search for `pattern`* across file(s) <br> `pattern` can be a `RegEx` <br><br> *example:* <br> **`grep word *txt`** - match `word` in all `.txt` files <br> **`grep [[:digit:]]{3}A file`** - match *exactly 3 digits followed by 'A'* in file  | <a name="grep"></a>**`grep -c`** - print *only* count of matching line <br> **`grep -i`** - case insensitive <br> **`grep -l`** - print *only* matched filename(s) <br> **`grep -n`** - print matched line and line number <br>  **`grep -v`** - print *only* lines that *don't* match `pattern` <br> **`grep -A`** *`n`* - show *`n`* lines *after* matching line <br> **`grep -B`** *`n`* - show *`n`* lines *before* matching line <br> **`grep -C`** *`n`* - show *`n`* lines *before and after* matching line <br> **`grep --color=always`** - highlights `pattern` in matched lines | 
 | **`find`** | **`find`** `[flags] [pathname] [expression]` | search for file(s) matching `expression` <br><br> *example:* <br> **`find $HOME -name "*.html" -print`** - find all .html files and print to screen <br> **`find . -cmin -30 -print -type f`** - find all files modified *within last 30 min*| `-ls` - output in `ls` format <br> `-regex` *`RegEx`* - match full *regular expressions* <br> `-cmin` *`time`* - true if file was modified within last *`time`* min <br> `-type` *`t`* - true if file is of type *`t`* (`d`ir and `f`ile)
  
-[↑ back](#terminal-commands)
+<div style="text-align: right;"><a href="#terminal-commands">↑ back</a></div>
 
 ## **Metadata**
 
@@ -100,7 +100,7 @@ $ ls -l</b>
 | **`mdfind`** | **`mdfind`** `[query]` | find files matching `query` <br><br> *example:* <br> **`mdfind -onlyin ~/Music "kMDItemMusicalGenre == 'Metal'"`** - find all Metal songs in collection | `-onlyin` - constrain search to specific subdir <br> `-count` - output *number* of matches |
 
 
-[↑ back](#terminal-commands)
+<div style="text-align: right;"><a href="#terminal-commands">↑ back</a></div>
 
 ## **Disk Space**
 
@@ -110,7 +110,7 @@ $ ls -l</b>
 | **`df`** | **`df -H`** | calculate free disk space with human readable format | **`df -i`** - show available inodes |
 
 
-[↑ back](#terminal-commands)
+<div style="text-align: right;"><a href="#terminal-commands">↑ back</a></div>
 
 
 ## **Processes**
@@ -122,4 +122,4 @@ $ ls -l</b>
 | **`top`** | **`top`** | display and update info about processes | **`top -o cpu`** - sort by *CPU usage* instead of `PID` |
 
 
-[↑ back](#terminal-commands)
+<div style="text-align: right;"><a href="#terminal-commands">↑ back</a></div>
