@@ -1,5 +1,5 @@
 # Terminal commands
-A beginner's cheat sheet to the OS X Terminal <br><br>
+Cheatsheet with *basic* commands for the OS X Terminal <br><br>
 [10 Essential Commands](#10-essential-commands) <br>
 
 #### Files  
@@ -82,14 +82,15 @@ $ ls -l</b>
 ## **File Searching**
 | Command | Usage | Description         | Details |
 |---------|-------|---------------------|---------|
-| **`grep`** | **`grep`** `[pattern] [filename(s)]` | search for `pattern`* across file(s) <br> `pattern` can be a `RegEx` <br><br> *examples* <br> **`grep word *txt`** - match `word` in all `.txt` files <br> **`grep [[:digit:]]{3}A file`** - match *exactly 3 digits followed by 'A'* in file  | <a name="grep"></a>**`grep -c`** - print *only* count of matching line <br> **`grep -i`** - case insensitive <br> **`grep -l`** - print *only* matched filename(s) <br> **`grep -n`** - print matched line and line number <br>  **`grep -v`** - print *only* lines that *don't* match `pattern` <br> **`grep -A`** *`n`* - show *`n`* lines *after* matching line <br> **`grep -B`** *`n`* - show *`n`* lines *before* matching line <br> **`grep -C`** *`n`* - show *`n`* lines *before and after* matching line <br> **`grep --color=always`** - highlights `pattern` in matched lines | 
-
+| **`grep`** | **`grep`** `[pattern] [filename(s)]` | search for `pattern`* across file(s) <br> `pattern` can be a `RegEx` <br><br> *example:* <br> **`grep word *txt`** - match `word` in all `.txt` files <br> **`grep [[:digit:]]{3}A file`** - match *exactly 3 digits followed by 'A'* in file  | <a name="grep"></a>**`grep -c`** - print *only* count of matching line <br> **`grep -i`** - case insensitive <br> **`grep -l`** - print *only* matched filename(s) <br> **`grep -n`** - print matched line and line number <br>  **`grep -v`** - print *only* lines that *don't* match `pattern` <br> **`grep -A`** *`n`* - show *`n`* lines *after* matching line <br> **`grep -B`** *`n`* - show *`n`* lines *before* matching line <br> **`grep -C`** *`n`* - show *`n`* lines *before and after* matching line <br> **`grep --color=always`** - highlights `pattern` in matched lines | 
+| **`find`** | **`find`** `[flags] [pathname] [expression]` | search for file(s) matching `expression` <br><br> *example:* <br> **`find $HOME -name "*.html" -print`** - find all .html files and print to screen <br> **`find . -cmin -30 -print -type f`** - find all files modified *within last 30 min*| `-ls` - output in `ls` format <br> `-regex` *`RegEx`* - match full *regular expressions* <br> `-cmin` *`time`* - true if file was modified within last *`time`* min <br> `-type` *`t`* - true if file is of type *`t`* (`d`ir and `f`ile)
+ 
 [↑ back](#terminal-commands)
 
 ## **Disk Space**
 | Command | Usage | Description         | Details |
 |---------|-------|---------------------|---------|
-| **`du`** | **`du`** `[file]` <br> **`du`** `[dir]` | calculate size of `file` / files in `directory` <br> common usage: **`du -sh /Applications/*.app`** | **`du -s`** - total for dir |
+| **`du`** | **`du`** `[file]` <br> **`du`** `[dir]` | calculate size of file(s) in dir <br> common usage: **`du -sh /Applications/*.app`** | **`du -s`** - total for dir |
 | **`df`** | **`df -H`** | calculate free disk space with human readable format | **`df -i`** - show available inodes |
 
 
