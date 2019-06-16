@@ -14,7 +14,6 @@ Cheatsheet with *basic* commands for the OS X Terminal <br><br>
 [Disk Space](#disk-space) <br>
 [Processes](#processes) <br>
 
-
 ## **10 Essential Commands** 
 
 | Command | Usage | Description         | Details |
@@ -28,7 +27,7 @@ Cheatsheet with *basic* commands for the OS X Terminal <br><br>
 | **`mv`** | **`mv`** `[original_file] [new_file]` | move `original_file` to `new_file` | rename files / directories 
 | **`pwd`** | **`pwd`** | display current working directory 
 | **`rm`** | **`rm`** `[filename]` | remove a `file`, `set of files` or `folder full of files` | **`rm -f`** `[file]` - force removal without confirmation <br>**`rm -r`** `[dir]` - remove directory & contents |
-| **`top`** | **`top`** | show `top` (cpu%) running applications and processes |
+| **`top`** | **`top`** | display and update info about processes | **`top -o cpu`** - sort by *CPU usage* instead of `PID`
 
 [↑ back](#terminal-commands)
 
@@ -114,11 +113,11 @@ $ ls -l</b>
 [↑ back](#terminal-commands)
 
 
-## **Processes & History**
+## **Processes**
 
 | Command | Usage | Description         | Details |
 |---------|-------|---------------------|---------|
-| **`ps`**| **`ps -acx`** <br><br> **`ps -ax \| grep`** `[word]`| list all processes <br><br>list all processes containing `word`  | `PID` - process id number <br> `TTY` - terminal process runs in <br> `TIME` - duration process has been running for <br> `CMD` - specific command being run |
+| **`ps`**| **`ps -acx`** <br><br> **`ps -ax \| grep`** `[word]`| list all processes <br><br>list all processes containing `word`  | `PID` - process id number <br> `TTY` - terminal name <br> `TIME` - CPU time the process has been used <br> `CMD` - name of process |
 | **`kill`** | **`kill`** `[PID]` | kill process `PID` | 
-
+| **`top`** | **`top`** | display and update info about processes | **`top -o cpu`** - sort by *CPU usage* instead of `PID` |
 [↑ back](#terminal-commands)
